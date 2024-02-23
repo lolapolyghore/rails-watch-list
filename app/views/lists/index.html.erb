@@ -11,8 +11,6 @@
     <% @lists.each do |list| %>
       <div class="col-md-4 mb-4">
         <div class="card">
-          <%# <%= image_tag list.image_url, class: "card-img-top", alt: list.name %>
-          <img src="<%= list.image_url %>" alt="">
           <div class="card-body">
             <h5 class="card-title"><%= list.name %></h5>
             <p class="card-text">Number of movies: <%= list.movies.count %></p>
