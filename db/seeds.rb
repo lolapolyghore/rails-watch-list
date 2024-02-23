@@ -17,6 +17,6 @@ Movie.create(title: "The Dark Knight", overview: "When the menace known as The J
 Movie.create(title: "Pulp Fiction", overview: "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.", poster_url: "https://www.imdb.com/title/tt0110912/mediaviewer/rm3859016192", rating: 8.9)
 Movie.create(title: "Forrest Gump", overview: "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.", poster_url: "https://www.imdb.com/title/tt0109830/mediaviewer/rm1951373824", rating: 8.8)
 
-List.create(name: "Sunday night movies")
-List.create(name: "Movies to cry")
-List.create(name: "Know your classics")
+List.create(name: "Sunday night movies", cover_image: "sundaynight.jpeg")
+List.create(name: "Movies to cry", cover_image: "crying.jpeg")
+List.create(name: "Know your classics", cover_image: "classics.jpeg")
