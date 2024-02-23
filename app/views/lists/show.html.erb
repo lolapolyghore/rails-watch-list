@@ -1,0 +1,28 @@
+<h2><%= @list.name %></h2>
+
+<h5>Movies</h5>
+
+
+<div class="container">
+  <div class="row">
+    <% @list.movies.each do |movie| %>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <%= image_tag movie.poster_url, class: "card-img-top", alt: movie.title %>
+          <div class="card-body">
+            <h5 class="card-title"><%= movie.title %></h5>
+            <p class="card-text">Rating: <%= movie.rating %>/10</p>
+            <strong>Comments:</strong>
+            <ul>
+              <% movie.bookmarks.each do |bookmark| %>
+                <li><%= bookmark.comment %></li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to "New Bookmark", new_list_bookmark_path(@list) %>
